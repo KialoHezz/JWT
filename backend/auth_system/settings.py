@@ -112,6 +112,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Add the below line of code to the settings.py file so that Django can know to use the new custom user class:
 AUTH_USER_MODEL = 'accounts.UserAccount'
 
 # Default primary key field type

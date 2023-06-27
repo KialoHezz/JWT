@@ -23,10 +23,10 @@ class UserAccount(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
 
-
+    # Specified that all objects for the class come from the UserAccountManager
     objects = UserAccountManager()
 
-    # determine login 
+    # Set the USERNAME_FIELD -- which defines the unique identifier  for the model when login
     USERNAME_FIELD = 'email'
 
     REQUIRED_FIELDS = ['name']
