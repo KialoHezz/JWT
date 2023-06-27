@@ -124,7 +124,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'build/static')
+]
 # Add the below line of code to the settings.py file so that Django can know to use the new custom user class:
 AUTH_USER_MODEL = 'accounts.UserAccount'
 
