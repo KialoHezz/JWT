@@ -28,7 +28,7 @@ class UserAccount(AbstractBaseUser, PermissionsMixin):
 
     # Set the USERNAME_FIELD -- which defines the unique identifier  for the model when login
     USERNAME_FIELD = 'email'
-
+    
     REQUIRED_FIELDS = ['name']
 
     def get_full_name(self):
